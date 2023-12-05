@@ -8,4 +8,7 @@ edition = "2021"
 [dependencies]
 
 [[bins]]
+name = "day2"
+
+[[bins]]
 name = "day1"

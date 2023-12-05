@@ -5,7 +5,7 @@ fn main() {
         let (mut first, mut last) = (None, None);
 
         for char in line.chars() {
-            if is_digit(&char) {
+            if char.is_numeric() {
                 if first == None {
                     first = Some(char);
                 }
@@ -19,12 +19,4 @@ fn main() {
         total = total + number;
     }
     print!("{:?}", total);
-}
-
-fn is_digit(char: &char) -> bool {
-    if char.is_numeric() {
-        return true;
-    }
-
-    return false;
 }
